@@ -1,0 +1,18 @@
+.custom-ui {
+  max-width: 450px !important;
+  text-align: center !important;
+}
+
+.custom-ui .mr {
+  margin-right: 10px;
+}
+
+.custom-ui h5 {
+  font-weight: bold;
+  font-size: 18px !important;
+}
+
+.custom-ui .no-results {
+  height: 60px;
+  opacity: 0.9;
+}

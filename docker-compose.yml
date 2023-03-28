@@ -1,0 +1,69 @@
+version: '3.9'
+services:
+  insysdb:
+    image: mysql:8
+    container_name: insysdb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_PORT: ${MYSQL_PORT}
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - "${MYSQL_PORT}:3306"
+  
+  insysbackend:
+    build: ./backend
+    working_dir: /api
+    container_name: insysbackend
+    restart: always
+    ports:
+      - "${PORT}:3001"
+    depends_on:
+      - insysdb
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_HOST: insysdb
+      JWT_SECRET: ${JWT_SECRET}
+      PORT: ${PORT}
+    volumes:
+      - ./backend:/api
+        
+  insysfrontend:
+    build: ./frontend
+    working_dir: /app
+    container_name: insysfrontend
+    restart: always
+    ports:
+      - "${REACT_APP_PORT}:3000"
+    depends_on:
+      - insysbackend
+    environment:
+      REACT_APP_URL: ${REACT_APP_URL}
+      REACT_APP_NAME: ${REACT_APP_NAME}
+      REACT_APP_VERSION: ${REACT_APP_VERSION}
+    volumes:
+      - ./frontend:/app
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

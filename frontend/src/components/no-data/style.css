@@ -1,0 +1,12 @@
+#no-data {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-style: italic;
+    color: rgb(200, 200, 200);
+}
+
+#no-data span {
+    display: block;
+}

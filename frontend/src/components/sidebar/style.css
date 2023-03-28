@@ -1,0 +1,14 @@
+#sidebar .sidebar-nav .nav-item {
+    border-bottom: dashed 1px gainsboro;
+}
+
+#sidebar .nav-item span {
+    font-size: 15px;
+    width: 100%;
+    font-weight: normal;
+    color: #333;
+}
+
+#sidebar .sidebar-nav .nav-link i {
+    color: #228442;
+}

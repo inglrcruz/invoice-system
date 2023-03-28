@@ -1,0 +1,5 @@
+#header .profile-name {
+    border-right: dashed 1px gainsboro;
+    padding-right: 15px;
+    margin-right: 15px;
+}

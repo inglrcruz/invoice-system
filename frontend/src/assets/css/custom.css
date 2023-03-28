@@ -1,0 +1,273 @@
+/*--------------------------------------------------------------
+# custom
+--------------------------------------------------------------*/
+#main {
+  min-height: 87vh;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: .875rem !important;
+  color: #1e2022;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: .0625rem solid #e7eaf3;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control-lg {
+  height: calc(1.5em + 1.875rem);
+  padding: .875rem 1.09375rem;
+  line-height: 1.5;
+  border-radius: .3125rem;
+}
+
+.input-group-text {
+  background-color: white;
+  border: .0625rem solid #e7eaf3;
+}
+
+.input-group-text i {
+  color: #b8bac0;
+}
+
+.input-group .form-control {
+  padding-left: 0px;
+  border-left: none !important;
+}
+
+.input-group .form-control-noline {
+  border-right: none !important;
+}
+
+.btn {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-lg {
+  padding: .875rem 1.09375rem;
+}
+
+.btn-info {
+  border-color: #07a0bd;
+  background-color: #0aaaca !important;
+}
+
+.btn-info:hover {
+  border-color: #07a0bd;
+  background-color: #07a0bd !important;
+}
+
+:where(.btn-info, .btn-info:hover, .btn-info:active) {
+  color: white !important
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid,
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  border-color: #e7eaf3;
+}
+
+.form-control.is-invalid> :focus,
+.form-control:focus {
+  border-color: #e7eaf3;
+  box-shadow: none;
+}
+
+/* Table */
+.rdt_TableHeadRow {
+  background-color: #228442 !important
+}
+
+.rdt_TableHead {
+  font-size: 15px !important;
+}
+
+.rdt_TableHead div {
+  color: white !important;
+}
+
+.rdt_TableCell {
+  font-size: 15px !important;
+}
+
+.table-btn-opt {
+  width: 35px;
+}
+
+/* End table */
+
+/* React Select */
+.css-13cymwt-control,
+.css-t3ipsp-control,
+.css-1fhf3k1-control,
+.css-16xfy0z-control {
+  font-size: 1rem;
+  padding: 6px !important;
+  border: .0625rem solid #e7eaf3 !important;
+  border-radius: .3125rem !important;
+}
+
+.css-1dimb5e-singleValue {
+  font-size: 15px;
+}
+
+/* End React Select */
+
+.required-label {
+  color: rgb(200, 55, 55) !important;
+}
+
+.required-input {
+  border-color: rgb(200, 55, 55) !important;
+}
+
+.card {
+  border: none !important;
+}
+
+.tooltip-wrapper {
+  z-index: 20;
+  /* Establece el z-index del TooltipWrapper en 20 */
+}
+
+/** Admin Paanel **/
+.head-title-card form {
+  padding-bottom: 13px;
+  border-bottom: dashed 1px gainsboro;
+}
+
+.head-title-card form .input-group {
+  width: 500px;
+}
+
+.head-title-card form .col:last-child {
+  text-align: right;
+}
+
+.switch {
+  display: block;
+}
+
+.view-span {
+  font-size: 15px !important;
+  display: block;
+  color: #5e5e5e;
+}
+
+.form-label {
+  margin-bottom: 3px;
+}
+
+.react-confirm-alert-overlay {
+  z-index: 9999;
+}
+
+.react-daterange-picker__wrapper,
+.react-date-picker__wrapper {
+  min-height: calc(1.5em + 1rem + 2px) !important;
+  border-radius: .3125rem !important;
+  font-size: .875rem !important;
+  padding: .675rem 1.09375rem !important;
+  border: .0625rem solid #e7eaf3 !important;
+}
+
+.vivid-red {
+  color: #dc3545;
+}
+
+.dark-green {
+  color: #198754;
+}
+
+.adonis-rose-yellow {
+  color: #e6b43d;
+}
+
+.advertising-blue {
+  color: #0081a8;
+}
+
+.head-totals label,
+.head-totals span {
+  display: block;
+  font-size: 15px;
+}
+
+.head-totals label {
+  color: #677788;
+}
+
+.head-totals span {
+  font-weight: bold;
+}
+
+.head-totals h5 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: dashed 1px gainsboro;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.sidebar-nav .nav-link,
+.sidebar-nav .nav-link:hover {
+  background-color: #228442;
+}
+
+.sidebar-nav .nav-link span,
+.sidebar-nav .nav-link:hover span {
+  color: white !important
+}
+
+.sidebar-nav .nav-link i,
+.sidebar-nav .nav-link:hover i {
+  color: white !important
+}
+
+.sidebar-nav .collapsed span {
+  color: #333 !important
+}
+
+.sidebar-nav .collapsed i {
+  color: #228442 !important
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.modal-header .btn-close {
+  width: 0px !important;
+  height: 0px !important;
+  font-size: 28px;
+  margin-right: 10px !important;
+}
+
+.head-table-modal {
+  margin: 0px;
+  padding: 0px;
+  border-bottom: dashed 1px gainsboro;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
