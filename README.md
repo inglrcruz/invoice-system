@@ -18,7 +18,7 @@ Invoice system developed with the following technologies:
 
 - Pull up the docker container
 ```sh
-$ docker-compose up
+$ sudo docker-compose up --build
 ```
 
 - Run the seed from the browser to generate a default user
