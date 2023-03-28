@@ -1,15 +1,19 @@
-# Fetching the latest node image on alpine linux
+# Usa la imagen oficial de Node como base
 FROM node:18.14.2-alpine
 
-# Setting up the work directory
+# Establece el directorio de trabajo en /app
 WORKDIR /app
 
-# Installing dependencies
-COPY ./package.json /app
+# Copia el archivo package.json e instala las dependencias
+COPY package*.json ./
 RUN npm install
 
-# Copying all the files in our project
+# Copia el resto de los archivos de la aplicación
 COPY . .
 
-# Starting our application
-CMD npm start
+# Expone el puerto 3000
+EXPOSE 3000
+
+# Inicia la aplicación de ReactJS
+CMD ["npm", "start"]
+

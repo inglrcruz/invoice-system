@@ -1,5 +1,5 @@
 import React from "react"
-import { NoData, Footer, Header, Sidebar } from '../../../components'
+import { NoData, Header, Sidebar } from '../../../components'
 import DataTable from 'react-data-table-component'
 import { Button, Card, Col, Form, InputGroup, Modal, Row, Table } from "react-bootstrap"
 import { isActiveStatus, PaginationOptions, statusFormat } from '../../../library/const'

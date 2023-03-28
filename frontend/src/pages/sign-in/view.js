@@ -33,7 +33,7 @@ const View = (props) => {
                                             <Form.Label className={errors.password && "required-label"}>Password</Form.Label>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Text className={errors.password && "required-input"}><i className="fas fa-lock"></i></InputGroup.Text>
-                                                <Form.Control className={errors.password && "required-input"} type="text" size="lg" placeholder="Type your password..."
+                                                <Form.Control className={errors.password && "required-input"} type="password" size="lg" placeholder="Type your password..."
                                                     value={form.password} name="password" onChange={handleChange} />
                                             </InputGroup>
                                         </Form.Group>
